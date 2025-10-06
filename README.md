@@ -2,3 +2,5 @@
 assignment 1:: reverse insertion sort
 
 assignment 3: randomized quicksort, hashing with chaining.
+
+assignment 4: heapsort analysis, priority queues
