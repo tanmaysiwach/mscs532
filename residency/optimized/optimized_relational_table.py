@@ -17,6 +17,9 @@ CREATE TABLE IF NOT EXISTS follows (
     PRIMARY KEY (follower_id, followed_id)
 )
 """)
+cur.execute("CREATE INDEX IF NOT EXISTS idx_follower_id ON follows(follower_id)")
+cur.execute("CREATE INDEX IF NOT EXISTS idx_followed_id ON follows(followed_id)")
+
 # ==============================================================
 # 2. Generate random follow relationships for users A–Z
 # ==============================================================
